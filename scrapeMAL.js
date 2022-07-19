@@ -8,7 +8,6 @@ const getMALHTML = async () => {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'cookie': 'MALSESSIONID=jm75i908u3acrj72so3tah8on6; MALHLOGSESSID=1e3ba940617b1bbd5eb70ebc231c8242; usprivacy=1Y--; __qca=P0-1136226967-1657924224770; _gcl_au=1.1.956848132.1657924225; _rdt_uuid=1657924225034.88dff98e-04b5-4f0a-a02e-e90dda7934f0; _gid=GA1.2.1209241359.1658202398; _gat=1; _ga_26FEP9527K=GS1.1.1658202398.3.1.1658202404.54; _ga=GA1.1.1362279337.1657924224',
             'referer': 'https://myanimelist.net/',
             'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
             'sec-ch-ua-mobile': '?0',

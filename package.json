@@ -1,0 +1,15 @@
+{
+  "name": "zainabsanimelist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrapeMAL.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haroun Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-html-parser": "^5.3.3"
+  }
+}

@@ -38,17 +38,9 @@ const main = async () => {
     const root = HTMLParser.parse(html);
     const tableRows = root.querySelectorAll('.ranking-list');
 
+    const animeList = [];
     for (let i in tableRows) {
         const tableRow = tableRows[i];
-        const anime = {
-            name: '',
-            ranking: 0,
-            imageUrl: '',
-            dateRange: '',
-            members: 0,
-            type: '',
-            numEpisodes: 0
-        };
 
         const name = tableRow.querySelector('.clearfix').innerText;
         const score = tableRow.querySelector('.score-label').innerText;
@@ -65,7 +57,7 @@ const main = async () => {
             imageUrl = tableRow.querySelector('.lazyload')['_attrs']['data-src'];
         }
 
-        console.log({
+        animeList.push({
             name,
             score,
             typeAndNumEpisodes,
@@ -76,6 +68,8 @@ const main = async () => {
             imageUrl
         });
     }
+
+    console.table(animeList.map(a => { return { ...a, imageUrl: `${a.imageUrl.slice(0, 10)}...` } }));
 }
 
 main();
